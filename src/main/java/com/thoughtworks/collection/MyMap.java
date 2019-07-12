@@ -39,7 +39,7 @@ public class MyMap {
 
     public List<Integer> sortFromSmall() {
 
-        array.stream().sorted();
-        return array;
+       return  array.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
+
     }
 }
